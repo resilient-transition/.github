@@ -1,0 +1,35 @@
+name: Architecture/Design Proposal
+description: Propose architectural changes, refactoring, or design improvements
+labels: ["architecture", "design"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose architectural improvements, refactoring, or design changes.
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: What problem does this solve?
+      description: Describe the current issue, tech debt, or improvement opportunity
+      placeholder: "Current code/architecture has issues with..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: How would you solve this? What would you change?
+      placeholder: "We could refactor X to use Y, or restructure Z to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and considerations
+      description: What would this affect? Any breaking changes or migration needed?
+      placeholder: "This would affect components X and Y, migration would involve..."
+    validations:
+      required: false

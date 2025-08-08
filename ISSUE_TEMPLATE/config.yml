@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a Question
+    url: https://github.com/YOUR_ORG/YOUR_REPO/discussions/new?category=q-a
+    about: For questions and general support, please use Discussions instead of creating an issue
+  - name: 💡 Share an Idea
+    url: https://github.com/YOUR_ORG/YOUR_REPO/discussions/new?category=ideas
+    about: Share ideas and suggestions with the community in Discussions

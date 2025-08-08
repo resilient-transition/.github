@@ -1,0 +1,35 @@
+name: Documentation
+description: Report missing or incorrect documentation
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve our documentation!
+
+  - type: textarea
+    id: documentation-issue
+    attributes:
+      label: What documentation needs attention?
+      description: Describe what's missing, unclear, or incorrect
+      placeholder: "The API docs for X are missing, or the setup guide doesn't explain Y..."
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where should this be documented?
+      description: Which file, section, or area needs the documentation
+      placeholder: "README.md, docs/api.md, inline comments in src/..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggested-content
+    attributes:
+      label: Suggested content (optional)
+      description: If you have ideas for what the documentation should say
+      placeholder: "Could include examples like..."
+    validations:
+      required: false

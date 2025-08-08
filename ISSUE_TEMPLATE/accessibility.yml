@@ -1,0 +1,35 @@
+name: Accessibility Issue
+description: Report accessibility barriers or improvements needed
+labels: ["accessibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us make the application accessible to everyone!
+
+  - type: textarea
+    id: accessibility-issue
+    attributes:
+      label: What accessibility barrier did you encounter?
+      description: Describe what's not accessible or hard to use
+      placeholder: "Can't navigate with keyboard, screen reader doesn't announce X, colors are too similar..."
+    validations:
+      required: true
+
+  - type: input
+    id: assistive-technology
+    attributes:
+      label: Assistive technology used
+      description: What tools are you using? (screen reader, keyboard navigation, etc.)
+      placeholder: "NVDA, JAWS, keyboard only, voice control..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What should happen instead?
+      description: How should this work for better accessibility?
+      placeholder: "Should be keyboard navigable, or should announce the current state..."
+    validations:
+      required: false

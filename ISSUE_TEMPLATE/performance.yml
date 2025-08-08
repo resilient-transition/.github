@@ -1,0 +1,35 @@
+name: Performance Issue
+description: Report slow performance or resource usage problems
+labels: ["performance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report performance issues to help us optimize the application.
+
+  - type: textarea
+    id: performance-problem
+    attributes:
+      label: What's slow or using too many resources?
+      description: Describe the performance issue you're experiencing
+      placeholder: "Page X takes 10+ seconds to load, or feature Y uses too much memory..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: when-it-happens
+    attributes:
+      label: When does this happen?
+      description: Under what conditions do you see this performance issue?
+      placeholder: "When there are 1000+ items, or after using the app for 30+ minutes..."
+    validations:
+      required: true
+
+  - type: input
+    id: impact
+    attributes:
+      label: Impact on users
+      description: How does this affect the user experience?
+      placeholder: "Makes the app unusable, or causes browser to freeze..."
+    validations:
+      required: false
